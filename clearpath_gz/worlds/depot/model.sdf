@@ -354,7 +354,6 @@
                     </script>
                 </material>
             </visual> -->
-            
             <visual name="FLOOR_visual">
                 <geometry>
                     <mesh>
@@ -407,7 +406,7 @@
                     </pbr>
                 </material>
             </visual>
-            <visual name="crates">
+            <!-- <visual name="crates">
                 <geometry>
                     <mesh>
                         <scale>0.6 0.6 0.6</scale>
@@ -425,7 +424,7 @@
                         </metal>
                     </pbr>
                 </material>
-            </visual>
+            </visual> -->
         </link>
         <link name="Fan1">
             <pose>-5.0154 -0.2952 6.12 0 0 0</pose>
