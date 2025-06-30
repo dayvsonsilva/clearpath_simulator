@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+    <model name="shelfs">
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_1_1</name>
+   <pose>-5.0 -7.0 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_1_2</name>
+   <pose>-1.4 -7.0 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_1_3</name>
+   <pose>2.2 -7.0 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_1_4</name>
+   <pose>5.8 -7.0 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_1_5</name>
+   <pose>9.4 -7.0 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_2_1</name>
+   <pose>-5.0 -4.23 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_2_2</name>
+   <pose>-1.4 -4.23 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_2_3</name>
+   <pose>2.2 -4.23 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_2_4</name>
+   <pose>5.8 -4.23 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_2_5</name>
+   <pose>9.4 -4.23 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_3_1</name>
+   <pose>-5.0 -3.58 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_3_2</name>
+   <pose>-1.4 -3.58 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_3_3</name>
+   <pose>2.2 -3.58 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_3_4</name>
+   <pose>5.8 -3.58 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_3_5</name>
+   <pose>9.4 -3.58 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_4_1</name>
+   <pose>-5.0 -0.48 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_4_2</name>
+   <pose>-1.4 -0.48 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_4_3</name>
+   <pose>2.2 -0.48 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_4_4</name>
+   <pose>5.8 -0.48 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_4_5</name>
+   <pose>9.4 -0.48 0 0 0 0</pose>
+ </include>
+  <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_5_1</name>
+   <pose>-5.0 -0,26 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_5_2</name>
+   <pose>-1.4 -0,26 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_5_3</name>
+   <pose>2.2 -0,26 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_5_4</name>
+   <pose>5.8 -0,26 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_5_5</name>
+   <pose>9.4 -0,26 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_6_1</name>
+   <pose>-5.0 3.28 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_6_2</name>
+   <pose>-1.4 3.28 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_6_3</name>
+   <pose>2.2 3.28 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_6_4</name>
+   <pose>5.8 3.28 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_6_5</name>
+   <pose>9.4 3.28 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_7_1</name>
+   <pose>-5.0 3.94 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_7_2</name>
+   <pose>-1.4 3.94 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_7_3</name>
+   <pose>2.2 3.94 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_7_4</name>
+   <pose>5.8 3.94 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_7_5</name>
+   <pose>9.4 3.94 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_8_1</name>
+   <pose>-5.0 6.72 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_8_2</name>
+   <pose>-1.4 6.72 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_8_3</name>
+   <pose>2.2 6.72 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_8_4</name>
+   <pose>5.8 6.72 0 0 0 0</pose>
+ </include>
+    <include>
+   <uri>https://fuel.gazebosim.org/1.0/MovAi/models/shelf</uri>
+   <name>shelf_8_5</name>
+   <pose>9.4 6.72 0 0 0 0</pose>
+ </include>
+    </model>
+</sdf>
