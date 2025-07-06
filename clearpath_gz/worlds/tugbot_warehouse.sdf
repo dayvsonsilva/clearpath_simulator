@@ -177,7 +177,7 @@
          model://depot/model.sdf
       </uri>
       <name>warehouse</name>
-      <pose>0 0 -0.09 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
     </include>
 
      <!-- Shelves -->
@@ -212,7 +212,7 @@
 
     <model name="camera1">
       <self_collide>true</self_collide>
-      <pose>-15 5.5 4.50 0 0 0</pose>
+      <pose>-15 5.5 4.50 -0.05 0.38 -0.26</pose>
 
       <include merge="true">
         <name>camera1</name>
@@ -230,8 +230,8 @@
 
     <model name="camera2">
       <self_collide>true</self_collide>
-      <pose>-15 -5.5 4.50 0 0 0</pose>
-      <include merge="true">
+      <pose>-15 0 4.50 0 0.38 0</pose>
+        <include merge="true">
         <name>camera2</name>
         <uri> model://Camera/model.sdf</uri>
         <experimental:params>
@@ -248,7 +248,7 @@
 
     <model name="camera3">
       <self_collide>true</self_collide>
-      <pose>-15 0 4.50 0 0 0</pose>
+      <pose>-15 -5.5 4.50 0.05 0.38 0.26</pose>
       <include merge="true">
         <name>camera3</name>
         <uri> model://Camera/model.sdf</uri>
@@ -266,7 +266,7 @@
 
     <model name="camera4">
       <self_collide>true</self_collide>
-      <pose>14.9 5.5 4.50 0 0 0</pose>
+      <pose>14.9 5.5 4.50 0.05 0.38 -2.88</pose>
       <include merge="true">
         <name>camera4</name>
         <uri> model://Camera/model.sdf</uri>
@@ -284,7 +284,7 @@
 
     <model name="camera5">
       <self_collide>true</self_collide>
-      <pose>14.9 -5.5 4.50 0 0 0</pose>
+          <pose>14.9 0 4.50 0.0 0.38 3.14159</pose>
       <include merge="true">
         <name>camera5</name>
         <uri> model://Camera/model.sdf</uri>
@@ -301,7 +301,7 @@
 
     <model name="camera6">
       <self_collide>true</self_collide>
-      <pose>14.9 0 4.50 0 0 0</pose>
+      <pose>14.9 -5.5 4.50 -0.05 0.38 2.87</pose>
       <include merge="true">
         <name>camera6</name>
         <uri> model://Camera/model.sdf</uri>
