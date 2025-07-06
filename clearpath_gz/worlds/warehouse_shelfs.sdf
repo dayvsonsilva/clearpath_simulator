@@ -30,15 +30,6 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
 
-    <!-- TODO(rkreinin): Fix lighting so that spawning multiple robots does not crash the sim-->
-    <!-- <light type="directional" name="sun">
-      <cast_shadows>0</cast_shadows>
-      <pose>-5 -3 10 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>1 1 1 1</specular>
-      <direction>0 0 -1</direction>
-    </light> -->
-
     <model name='ground_plane'>
       <static>true</static>
       <link name='link'>
@@ -53,15 +44,6 @@
       </link>
       <pose>0 0 0 0 0 0</pose>
     </model>
-
-    <!-- Base -->
-    <!-- <include>
-      <uri>
-        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Warehouse
-      </uri>
-      <name>warehouse</name>
-      <pose>0 0 -0.1 0 0 0</pose>
-    </include> -->
 
     <include>
         <uri>
@@ -91,8 +73,117 @@
         <name>shelfs</name>
         <pose>0 0 0 0 0 0</pose>
     </include>
- 
 
+    <!-- cameras -->
+    <include>
+      <uri>
+      model://Camera/model.sdf
+      </uri>
+      <name>camera1</name>
+      <pose>-15 5.5 4.50 0 0 0</pose>
+      <static>true</static>
+    </include>
+
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Camera
+      </uri>
+      <name>camera2</name>
+      <pose>-15 -5.5 4.50 0 0 0</pose>
+      <static>true</static>
+      <plugin name="gz_ros_camera" filename="libgz_ros_camera.so">
+      <ros>
+        <namespace>/a200_0000/camera2</namespace>
+        <remapping>image_raw:=image_raw</remapping>
+      </ros>
+      </plugin>
+      
+    </include>
+
+
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Camera
+      </uri>
+      <name>camera3</name>
+      <pose>-15 0 4.50 0 0 0</pose>
+      <static>true</static>
+            <plugin name="gz_ros_camera" filename="libgz_ros_camera.so">
+        <ros>
+          <namespace>/a200_0000/camera3</namespace>
+          <remapping>image_raw:=image_raw</remapping>
+        </ros>
+      </plugin>
+      
+    </include>
+ 
+     <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Camera
+      </uri>
+      <name>camera4</name>
+      <pose>14.9 5.5 4.50 0 0 0</pose>
+      <static>true</static>
+      <plugin name="gz_ros_camera" filename="libgz_ros_camera.so">
+        <ros>
+          <namespace>/a200_0000/camera4</namespace>
+          <remapping>image_raw:=image_raw</remapping>
+        </ros>
+      </plugin>
+      
+    </include>
+
+        <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Camera
+      </uri>
+      <name>camera5</name>
+      <pose>14.9 -5.5 4.50 0 0 0</pose>
+      <static>true</static>
+            <plugin name="gz_ros_camera" filename="libgz_ros_camera.so">
+        <ros>
+          <namespace>/a200_0000/camera5</namespace>
+          <remapping>image_raw:=image_raw</remapping>
+        </ros>
+      </plugin>
+      
+    </include>
+
+    <!-- <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Camera
+      </uri>
+      <name>camera6</name>
+      <pose>14.9 0 4.50 0 0 0</pose>
+      <static>true</static>
+            <plugin name="gz_ros_camera" filename="libgz_ros_camera.so">
+        <ros>
+          <namespace>/a200_0000/camera6</namespace>
+          <remapping>image_raw:=image_raw</remapping>
+        </ros>
+      </plugin>
+      
+    </include> -->
+
+    <model name="camera6">
+      <self_collide>true</self_collide>
+      <pose>11.75 24.75 7.0 -0.07 0.31 -2.02</pose>
+
+      <include merge="true">
+        <name>camera6</name>
+        <uri> https://fuel.gazebosim.org/1.0/OpenRobotics/models/Camera</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera6/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera6/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+ 
     <include>
       <uri>
       https://fuel.gazebosim.org/1.0/OpenRobotics/models/MaleVisitorOnPhone
