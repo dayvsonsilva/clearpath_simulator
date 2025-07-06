@@ -36,7 +36,8 @@ ARGUMENTS = [
                               'warehouse',
                               'warehouse_reduced',
                               'edifice',
-                              'warehouse_shelfs'
+                              'warehouse_shelfs',
+                              'tugbot_warehouse'
                           ],
                           description='Gazebo World'),
     DeclareLaunchArgument('setup_path',
