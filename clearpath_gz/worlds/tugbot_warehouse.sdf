@@ -183,6 +183,26 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
 
+    <!-- calibrate -->
+    <!-- <include>
+      <uri>
+         model://calibration_plane/calibration_plane.sdf
+      </uri>
+      <name>calibration_plane</name>
+      <pose>0 0 1 0 0 0</pose>
+    </include> -->
+
+
+    <include>
+      <uri>
+         https://fuel.gazebosim.org/1.0/abmohit/models/Calibration Plane
+      </uri>
+      <name>checkerboard_plane_2</name>     
+      <pose>0 0 3 0 0 0</pose>  
+    </include>
+
+
+
      <!-- Shelves -->
 
     <!-- <include>
@@ -225,7 +245,7 @@
             <camera name="camera" action="modify">
               <camera_info_topic>camera1/camera_info</camera_info_topic>
             </camera>
-            <topic action="modify">camera1/image_raw</topic>
+            <topic action="modify">camera1/image_raw</topic>      
           </sensor>
         </experimental:params>
       </include>
