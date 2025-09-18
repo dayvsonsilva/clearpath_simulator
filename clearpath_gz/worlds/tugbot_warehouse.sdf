@@ -235,7 +235,7 @@
 
     <model name="camera1">
       <self_collide>true</self_collide>
-      <pose>-15 5.5 4.50 -0.05 0.38 -0.26</pose>
+      <pose>-15 5.5 4.50 -0.05 0.58 -0.59</pose>
 
       <include merge="true">
         <name>camera1</name>
@@ -253,7 +253,7 @@
 
     <model name="camera2">
       <self_collide>true</self_collide>
-      <pose>-15 0 4.50 0 0.38 0</pose>
+      <pose>-15 0 4.50 0 0.58 0</pose>
         <include merge="true">
         <name>camera2</name>
         <uri> model://Camera/model.sdf</uri>
@@ -271,7 +271,7 @@
 
     <model name="camera3">
       <self_collide>true</self_collide>
-      <pose>-15 -5.5 4.50 0.05 0.38 0.26</pose>
+      <pose>-15 -5.5 4.50 0.05 0.58 0.59</pose>
       <include merge="true">
         <name>camera3</name>
         <uri> model://Camera/model.sdf</uri>
@@ -289,7 +289,7 @@
 
     <model name="camera4">
       <self_collide>true</self_collide>
-      <pose>14.9 5.5 4.50 0.05 0.38 -2.88</pose>
+      <pose>14.9 5.5 4.50 0.05 0.58 -2.54</pose>
       <include merge="true">
         <name>camera4</name>
         <uri> model://Camera/model.sdf</uri>
@@ -307,7 +307,7 @@
 
     <model name="camera5">
       <self_collide>true</self_collide>
-          <pose>14.9 0 4.50 0.0 0.38 3.14159</pose>
+          <pose>14.9 0 4.50 0.0 0.58 3.14159</pose>
       <include merge="true">
         <name>camera5</name>
         <uri> model://Camera/model.sdf</uri>
@@ -324,7 +324,7 @@
 
     <model name="camera6">
       <self_collide>true</self_collide>
-      <pose>14.9 -5.5 4.50 -0.05 0.38 2.87</pose>
+      <pose>14.9 -5.5 4.50 -0.05 0.58 2.54</pose>
       <include merge="true">
         <name>camera6</name>
         <uri> model://Camera/model.sdf</uri>
