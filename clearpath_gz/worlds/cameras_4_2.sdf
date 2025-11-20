@@ -21,7 +21,7 @@
 
     <model name="camera2">
       <self_collide>true</self_collide>
-      <pose>-15 5.1 4.50 0 0.58 0</pose>
+      <pose>-15 1.6 4.50 0 0.58 0</pose>
         <include merge="true">
         <name>camera2</name>
         <uri> model://Camera/model.sdf</uri>
