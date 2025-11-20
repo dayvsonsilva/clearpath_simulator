@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="pallet_aruco_1">
+    <static>false</static>
+
+    <!-- Link do Pallet -->
+    <link name="pallet_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>15</mass>
+        <inertia>
+          <ixx>1.25</ixx>
+          <iyy>1.80</iyy>
+          <izz>2.50</izz>
+        </inertia>
+      </inertial>
+
+      <!-- Visual do pallet -->
+      <visual name="pallet_visual">
+        <geometry>
+          <mesh>
+            <uri>model://Pallet_Standard/base_visual.glb</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Colisões do pallet (base inferior) -->
+      <collision name="pallet_base_bottom">
+        <pose>0 0 0.0125 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 1.0 0.025</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- Colisão da base superior do pallet -->
+      <collision name="pallet_base_top">
+        <pose>0 0 0.1325 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 1.0 0.025</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Link do ArUco Marker no topo do pallet -->
+    <link name="aruco_link_1">
+      <!-- Posicionar o ArUco no topo do pallet (altura ~0.145m) -->
+      <pose>0 0 0.146 0 0 0</pose>
+
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <iyy>0.0001</iyy>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+
+      <!-- Plano branco com ArUco 4x4 de 1.0m x 1.0m (menor dimensão do pallet) -->
+      <visual name="aruco_visual_1">
+        <pose>0 0 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.0 1.0 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <albedo_map>aruco_marker_1.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <!-- Colisão mínima para o marcador -->
+      <collision name="aruco_collision_1">
+        <pose>0 0 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.0 1.0 0.001</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joint fixo entre pallet e ArUco -->
+    <joint name="pallet_aruco_joint_1" type="fixed">
+      <parent>pallet_link</parent>
+      <child>aruco_link_1</child>
+    </joint>
+
+  </model>
+</sdf>
