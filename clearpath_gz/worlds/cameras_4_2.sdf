@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+    <model name="cameras_4_2">
+    <!-- side 1 -->
+    <model name="camera1">
+      <self_collide>true</self_collide>
+      <pose>-15 5.3 4.50 0.0 0.58 0.0</pose> <!-- x, y, z, em metros, roll, pitch, yaw em radianos -->
+      <include merge="true">
+        <name>camera1</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera1/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera1/image_raw</topic>      
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+    <model name="camera2">
+      <self_collide>true</self_collide>
+      <pose>-15 5.1 4.50 0 0.58 0</pose>
+        <include merge="true">
+        <name>camera2</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera2/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera2/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+
+    <model name="camera3">
+      <self_collide>true</self_collide>
+      <pose>-15 -1.6 4.50 0.0 0.58 0.0</pose>
+      <include merge="true">
+        <name>camera3</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera3/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera3/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+    <model name="camera4">
+      <self_collide>true</self_collide>
+      <pose>-15 -5.3 4.50 0.0 0.58 0.0</pose>
+      <include merge="true">
+        <name>camera4</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera4/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera4/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+
+<!-- Side 2 -->
+
+    <model name="camera5">
+      <self_collide>true</self_collide>
+      <pose>14.9 5.3 4.50 0.0 0.58 3.14159</pose> 
+      <include merge="true">
+        <name>camera5</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera5/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera5/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+
+    <model name="camera6">
+      <self_collide>true</self_collide>
+          <pose>14.9 1.6 4.50 0.0 0.58 3.14159</pose>
+      <include merge="true">
+        <name>camera6</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera6/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera6/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+    <model name="camera7">
+      <self_collide>true</self_collide>
+      <pose>14.9 -1.6 4.50 0.0 0.58 3.14159</pose>
+      <include merge="true">
+        <name>camera7</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera7/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera7/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+  
+
+    <model name="camera8">
+      <self_collide>true</self_collide>
+      <pose>14.9 -5.3 4.50 0.0 0.58 3.14159</pose>
+      <include merge="true">
+        <name>camera8</name>
+        <uri> model://Camera/model.sdf</uri>
+        <experimental:params>
+          <sensor element_id="link::camera">
+            <camera name="camera" action="modify">
+              <camera_info_topic>camera8/camera_info</camera_info_topic>
+            </camera>
+            <topic action="modify">camera8/image_raw</topic>
+          </sensor>
+        </experimental:params>
+      </include>
+    </model>
+
+    </model>
+</sdf>

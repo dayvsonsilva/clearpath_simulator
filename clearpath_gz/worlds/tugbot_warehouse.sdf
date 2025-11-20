@@ -220,6 +220,34 @@
         <pose>0 0 0 0 0 0</pose>
     </include>
 
+    <!-- Caixas com marcadores aruco -->
+
+    <!-- <include>
+      <uri>
+        model://aruco_id1_box/model.sdf
+      </uri>
+      <name>box1_aruco</name>
+      <pose>0 5.5 0 0 0 0</pose>
+    </include>   -->
+
+    <include>
+    <uri>
+      model://aruco_box_1/model.sdf
+    </uri>
+      <name>box1_aruco</name>
+      <pose>0 5.5 0 0 0.0 0.0</pose>
+    </include>
+
+    <include>
+      <uri>
+         model://Pallet_Standard/model.sdf
+      <!-- https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pallet_Standard -->
+      </uri>
+      <name>pallet_box_mobile_1</name>
+      <pose>7.0 -6.5 0.0 0 0 1.57</pose>  
+    </include>
+
+
     <!-- marcadores unicos-->
     <include>
     <uri>
@@ -255,14 +283,6 @@
 
     <include>
       <uri>
-        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Pallet_Standard
-      </uri>
-      <name>Pallet_Standard</name>
-      <pose>7.0 -6.5 0.0 0 0 1.57</pose>  
-    </include>
-
-    <include>
-      <uri>
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Handtruck_01
       </uri>
       <name>Handtruck_01</name>
@@ -289,111 +309,15 @@
 
     <!-- Cameras -->
 
-    <model name="camera1">
-      <self_collide>true</self_collide>
-      <pose>-15 5.5 4.50 -0.05 0.58 -0.59</pose> <!-- x, y, z, em metros, roll, pitch, yaw em radianos -->
-
-      <include merge="true">
-        <name>camera1</name>
-        <uri> model://Camera/model.sdf</uri>
-        <experimental:params>
-          <sensor element_id="link::camera">
-            <camera name="camera" action="modify">
-              <camera_info_topic>camera1/camera_info</camera_info_topic>
-            </camera>
-            <topic action="modify">camera1/image_raw</topic>      
-          </sensor>
-        </experimental:params>
-      </include>
-    </model>
-
-    <model name="camera2">
-      <self_collide>true</self_collide>
-      <pose>-15 0 4.50 0 0.58 0</pose>
-        <include merge="true">
-        <name>camera2</name>
-        <uri> model://Camera/model.sdf</uri>
-        <experimental:params>
-          <sensor element_id="link::camera">
-            <camera name="camera" action="modify">
-              <camera_info_topic>camera2/camera_info</camera_info_topic>
-            </camera>
-            <topic action="modify">camera2/image_raw</topic>
-          </sensor>
-        </experimental:params>
-      </include>
-    </model>
+    <include>
+      <uri>
+        model://cameras_4_2.sdf
+      </uri>
+      <name>cameras</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include> 
 
 
-    <model name="camera3">
-      <self_collide>true</self_collide>
-      <pose>-15 -5.5 4.50 0.05 0.58 0.59</pose>
-      <include merge="true">
-        <name>camera3</name>
-        <uri> model://Camera/model.sdf</uri>
-        <experimental:params>
-          <sensor element_id="link::camera">
-            <camera name="camera" action="modify">
-              <camera_info_topic>camera3/camera_info</camera_info_topic>
-            </camera>
-            <topic action="modify">camera3/image_raw</topic>
-          </sensor>
-        </experimental:params>
-      </include>
-    </model>
-
-
-    <model name="camera4">
-      <self_collide>true</self_collide>
-      <pose>14.9 5.5 4.50 0.05 0.58 -2.54</pose> 
-      <include merge="true">
-        <name>camera4</name>
-        <uri> model://Camera/model.sdf</uri>
-        <experimental:params>
-          <sensor element_id="link::camera">
-            <camera name="camera" action="modify">
-              <camera_info_topic>camera4/camera_info</camera_info_topic>
-            </camera>
-            <topic action="modify">camera4/image_raw</topic>
-          </sensor>
-        </experimental:params>
-      </include>
-    </model>
-
-
-    <model name="camera5">
-      <self_collide>true</self_collide>
-          <pose>14.9 0 4.50 0.0 0.58 3.14159</pose>
-      <include merge="true">
-        <name>camera5</name>
-        <uri> model://Camera/model.sdf</uri>
-        <experimental:params>
-          <sensor element_id="link::camera">
-            <camera name="camera" action="modify">
-              <camera_info_topic>camera5/camera_info</camera_info_topic>
-            </camera>
-            <topic action="modify">camera5/image_raw</topic>
-          </sensor>
-        </experimental:params>
-      </include>
-    </model>
-
-    <model name="camera6">
-      <self_collide>true</self_collide>
-      <pose>14.9 -5.5 4.50 -0.05 0.58 2.54</pose>
-      <include merge="true">
-        <name>camera6</name>
-        <uri> model://Camera/model.sdf</uri>
-        <experimental:params>
-          <sensor element_id="link::camera">
-            <camera name="camera" action="modify">
-              <camera_info_topic>camera6/camera_info</camera_info_topic>
-            </camera>
-            <topic action="modify">camera6/image_raw</topic>
-          </sensor>
-        </experimental:params>
-      </include>
-    </model>
 
   </world>
 </sdf>

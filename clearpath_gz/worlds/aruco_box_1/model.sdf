@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="box_on_pallet">
+    <static>false</static>
+
+    <!-- === LINK DO PALLET === -->
+    <link name="link_pallet">
+      <pose>0 0 0 0 0 0</pose>
+
+      <include>
+        <uri>model://Pallet_Standard</uri>
+      </include>
+    </link>
+5
+    <!-- === LINK DA CAIXA (COM ARUCO EM CIMA) === -->
+    <link name="link_box">
+      <!-- altura do pallet ≈ 0.144 m (do modelo oficial) -->
+      <!-- altura da caixa = 0.2 → metade = 0.1 -->
+      <!-- posição final da caixa: pallet + metade da caixa -->
+      <pose>0 0 0.244 0 0 0</pose>
+
+      <!-- superfície superior da caixa com ArUco -->
+      <visual name="aruco_top">
+        <pose>0 0 0.1 0 0 0</pose> <!-- metade da altura da caixa -->
+        <geometry>
+          <box>
+            <size>1.2 1.2 0.001</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+
+          <pbr>
+            <metal>
+              <albedo_map>aruco_1.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+
+    <!-- === JOINT FIXO ENTRE PALLET E CAIXA === -->
+    <joint name="joint_box_pallet" type="fixed">
+      <parent>link_pallet</parent>
+      <child>link_box</child>
+    </joint>
+
+  </model>
+</sdf>
