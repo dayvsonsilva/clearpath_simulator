@@ -183,33 +183,6 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
 
-    <!-- calibrate -->
-    <!-- <include>
-      <uri>
-         model://calibration_plane/calibration_plane.sdf
-      </uri>
-      <name>calibration_plane</name>
-      <pose>0 0 1 0 0 0</pose>
-    </include> -->
-
-
-    <!-- <include>
-      <uri>
-         https://fuel.gazebosim.org/1.0/abmohit/models/Calibration Plane
-      </uri>
-      <name>checkerboard_plane_2</name>     
-      <pose>0 0 3 0 0 0</pose>  
-    </include> -->
-
-    <!-- <include>
-      <uri>
-      model://checkerboard_8_6_0_254/checkerboard.sdf
-      </uri>
-      <name>checkerboard_8_6_0_254</name>     
-      <pose>0 2 3 0 0 0</pose>  
-    </include> -->
-
-
      <!-- Shelves -->
 
     <include>
@@ -219,16 +192,6 @@
         <name>shelfs</name>
         <pose>0 0 0 0 0 0</pose>
     </include>
-
-    <!-- Caixas com marcadores aruco -->
-
-    <!-- <include>
-      <uri>
-        model://aruco_id1_box/model.sdf
-      </uri>
-      <name>box1_aruco</name>
-      <pose>0 5.5 0 0 0 0</pose>
-    </include>   -->
 
     <include>
     <uri>
@@ -278,24 +241,6 @@
       <name>Handtruck_01</name>
       <pose>-7.78 -7.1 0.0 0 0 -3.1</pose>
     </include>
-
-    <!-- Tugbot -->
-
-    <!-- <include>
-      <uri>
-        https://fuel.ignitionrobotics.org/1.0/MovAi/models/Tugbot-charging-station
-      </uri>
-      <name>charging_station</name>
-      <pose>14.7 -10.6 -0.04 0 0 0</pose>
-    </include> -->
-
-    <!-- <include>
-      <uri>
-        https://fuel.ignitionrobotics.org/1.0/MovAi/models/Tugbot
-      </uri>
-      <name>tugbot</name>
-      <pose>13.9 -10.6 0.1 0 0 0</pose>
-    </include> -->
 
     <!-- Cameras -->
 
