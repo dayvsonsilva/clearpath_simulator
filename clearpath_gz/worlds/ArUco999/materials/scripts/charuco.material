@@ -1,0 +1,14 @@
+material CharucoBoard/Charuco
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture aruco_maker_999.png.png
+        filtering trilinear
+      }
+    }
+  }
+}
