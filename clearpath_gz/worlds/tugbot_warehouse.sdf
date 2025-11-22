@@ -185,24 +185,17 @@
 
      <!-- Shelves -->
 
-    <include>
+    <!-- <include>
         <uri>
          model://shelfs.sdf
         </uri>
         <name>shelfs</name>
         <pose>0 0 0 0 0 0</pose>
-    </include>
+    </include> -->
 
-    <include>
-    <uri>
-      model://aruco_box_1/model.sdf
-    </uri>
-      <name>box1_aruco</name>
-      <pose>0 5.5 0 0 0.0 0.0</pose>
-    </include>
 
     <!-- marcadores unicos-->
-    <include>
+    <!-- <include>
     <uri>
     https://fuel.gazebosim.org/1.0/OpenRobotics/models/Toolbox
     </uri>
@@ -240,7 +233,7 @@
       </uri>
       <name>Handtruck_01</name>
       <pose>-7.78 -7.1 0.0 0 0 -3.1</pose>
-    </include>
+    </include> -->../images/images_4_2_aruco
 
     <!-- Cameras -->
 
@@ -252,9 +245,17 @@
       <pose>0 0 0 0 0 0</pose>
     </include>
 
+    <!-- ========== Marcador de Calibração ========== -->
+    <!-- ChArUco Calibration Board -->
+    <include>
+      <uri>model://CharucoBoard</uri>
+      <name>charuco_calibration_board</name>
+      <pose>0 0 0.505 0 0 0</pose>
+    </include>
+
     <!-- ========== Paletes com ArUco ========== -->
 
-    <include>
+    <!-- <include>
       <uri>model://pallet_aruco_0</uri>
       <name>pallet_aruco_0</name>
       <pose>-11.0 5.3 0 0 0 0</pose>
@@ -300,7 +301,7 @@
       <uri>model://pallet_aruco_7</uri>
       <name>pallet_aruco_7</name>
       <pose>12 5.4 0 0 0 0</pose>
-    </include>
+    </include> -->
 
   </world>
 </sdf>
